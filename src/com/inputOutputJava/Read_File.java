@@ -16,7 +16,6 @@ public class Read_File {
         //FileInputStream is a byte input stream class that provides method for reading bytes from a file.
         // declared variable as null
         FileInputStream fis = null;
-
         try {
             //FileInputStream to read the file
             fis = new FileInputStream(file);
@@ -38,9 +37,10 @@ public class Read_File {
             System.out.println("IO Exception :"+e);
         }finally {
             try {
-                if (bis!=null&&bis!=null){
+                if (bis !=null && fis!=null){
                     fis.close();
                     bis.close();
+                    System.out.println("File hasn't found any character's");
                 }
             }catch (Exception eee){
                 System.out.println("IO in file closing error :");
