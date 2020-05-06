@@ -1,4 +1,4 @@
-package com.exampleJava;
+package com.frequentlyAskedJavaProgram;
 
 public class Finding_Factorial {
     //we can find factorial number using for loop or while loop
